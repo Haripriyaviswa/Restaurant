@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation Manager</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(11, 101, 11);
+    margin: 0;
+    padding: 0;
+    }
+
+    .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:rgb(246, 246, 88);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Reservation Manager</h1>
+
+        <div class="input-section">
+            <label>customerName:</label>
+            <input type="text" id="customerName" placeholder="Customer Name" />
+            <br><br>
+            <label>No. Of Guest:</label>
+            <input type="number" id="guests" placeholder="Number of Guests" />
+            <br><br>
+            <label>PhoneNumber:</label>
+            <input type="number" id="phone" placeholder="PhoneNumber" />
+            <br><br>
+            <label>ReservationTime:</label>
+            <input type="time" id="reservationTime" />
+            <br>
+            <br>
+            <button id="addReservationBtn">Add Reservation</button>
+        </div>
+
+        <div class="reservation-section">
+            <h2>Current Reservations:</h2>
+            <ul id="reservationList">
+            </ul>
+        </div>
+    </div>
+
+    <script src="customer.js"></script>
+</body>
+</html>
